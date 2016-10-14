@@ -1,0 +1,6 @@
+framework module Pods_MyWB {
+  umbrella header "Pods-MyWB-umbrella.h"
+
+  export *
+  module * { export * }
+}
