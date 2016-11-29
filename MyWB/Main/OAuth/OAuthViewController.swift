@@ -12,6 +12,7 @@ import SVProgressHUD
 class OAuthViewController: UIViewController {
 
     @IBOutlet weak var webView: UIWebView!
+    let KDefault = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,6 @@ extension OAuthViewController {
     /// 设置webVeiw
     private func setupWebView(){
         webView.loadRequest(NSURLRequest(URL: NSURL(string: "https://api.weibo.com/oauth2/authorize?client_id=\(app_Key)&redirect_uri=\(app_redirect_uri)")!))
-
     }
 }
 
@@ -47,7 +47,7 @@ extension OAuthViewController {
     /// 填充登录信息
     @objc private func fillItem(){
         // 书写js代码
-        let jsCode = "document.getElementById('userId').value='18890677012';document.getElementById('passwd').value='ZB18890677012';"
+        let jsCode = "document.getElementById('userId').value='\(KDefault.valueForKey("useraccount"))';document.getElementById('passwd').value='\(KDefault.valueForKey("usercode"))';"
         webView.stringByEvaluatingJavaScriptFromString(jsCode)
     }
 }
@@ -116,6 +116,12 @@ extension OAuthViewController:UIWebViewDelegate{
             account.screen_name = userInfoDict["screen_name"] as? String
             account.avatar_large = userInfoDict["avatar_large"] as? String
             
+            let userAccount = self.webView.stringByEvaluatingJavaScriptFromString("document.getElementById('userId').value;")
+            let userCode = self.webView.stringByEvaluatingJavaScriptFromString("document.getElementById('passwd').value;")
+            self.KDefault.setValue(userAccount, forKey: "useraccount")
+            self.KDefault.setValue(userCode, forKey: "usercode")
+            self.KDefault.synchronize()
+
             //4.利用归档将用户模型进行本地持久化存储
             //4.1.获取沙盒路径
             let accountPath = UserAccountViewModel.shareInstan.accountPath

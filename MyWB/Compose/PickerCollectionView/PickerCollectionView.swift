@@ -13,6 +13,12 @@ private let margin : CGFloat = 15
 
 class PickerCollectionView: UICollectionView {
 
+    // MARK:- 自定义属性
+    var images : [UIImage] = [UIImage](){
+        didSet{
+            reloadData()
+        }
+    }
     
     // MARK:- 系统回调方法
     override func awakeFromNib() {
@@ -29,17 +35,18 @@ class PickerCollectionView: UICollectionView {
         layout.minimumInteritemSpacing = margin
         //设置布局内边距
         contentInset = UIEdgeInsetsMake(margin, margin, 0, margin)
-        
     }
 }
 
 extension PickerCollectionView : UICollectionViewDataSource {
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 9
+        return images.count + 1
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(pickerViewCell, forIndexPath: indexPath)
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(pickerViewCell, forIndexPath: indexPath) as! PickerCollectionViewCell
+        
+        cell.image = indexPath.item <= images.count - 1 ? images[indexPath.item] : nil
         return cell
     }
 }

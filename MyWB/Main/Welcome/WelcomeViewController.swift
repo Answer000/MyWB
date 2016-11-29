@@ -31,7 +31,7 @@ class WelcomeViewController: UIViewController {
         
         /// 2.执行动画
         // Damping:阻力系数，阻力系数越大，弹懂得效果越不明显 0~1
-        UIView.animateWithDuration(5.0, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 3.0, options: [], animations: { () -> Void in
+        UIView.animateWithDuration(3.0, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 3.0, options: [], animations: { () -> Void in
             
             var rect = self.userIconView.frame
             rect.origin.y = 50

@@ -18,24 +18,40 @@
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOC-fX-Zjp">
                         <state key="normal" backgroundImage="compose_pic_add"/>
                         <state key="highlighted" backgroundImage="compose_pic_add_highlighted"/>
+                        <connections>
+                            <action selector="addBtnClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Yag-RT-Hpl"/>
+                        </connections>
                     </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pBP-dn-CJr"/>
                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diV-Ky-xn0">
                         <constraints>
                             <constraint firstAttribute="height" constant="24" id="u65-9K-g0r"/>
                             <constraint firstAttribute="width" constant="24" id="zFv-kP-pzn"/>
                         </constraints>
                         <state key="normal" image="compose_photo_close"/>
+                        <connections>
+                            <action selector="delectBtnClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="XI7-gl-L01"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstItem="pBP-dn-CJr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4ky-xx-s6W"/>
+                <constraint firstItem="pBP-dn-CJr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8fg-sP-HJy"/>
                 <constraint firstItem="diV-Ky-xn0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="BVm-Ty-WAY"/>
                 <constraint firstAttribute="trailing" secondItem="diV-Ky-xn0" secondAttribute="trailing" id="GW2-cn-c4F"/>
                 <constraint firstAttribute="trailing" secondItem="KOC-fX-Zjp" secondAttribute="trailing" id="HCf-QN-tzf"/>
                 <constraint firstItem="KOC-fX-Zjp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="PNf-Yf-wHk"/>
+                <constraint firstAttribute="bottom" secondItem="pBP-dn-CJr" secondAttribute="bottom" id="VyY-cD-hw6"/>
+                <constraint firstAttribute="trailing" secondItem="pBP-dn-CJr" secondAttribute="trailing" id="W6A-qr-Loe"/>
                 <constraint firstItem="KOC-fX-Zjp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Xuy-UV-dvo"/>
                 <constraint firstAttribute="bottom" secondItem="KOC-fX-Zjp" secondAttribute="bottom" id="yJw-bC-11k"/>
             </constraints>
+            <connections>
+                <outlet property="addBtn" destination="KOC-fX-Zjp" id="Pgw-2T-B5i"/>
+                <outlet property="delectBtn" destination="diV-Ky-xn0" id="G9v-fS-rdE"/>
+                <outlet property="photoImgView" destination="pBP-dn-CJr" id="bAd-h4-e2D"/>
+            </connections>
             <point key="canvasLocation" x="25" y="52"/>
         </collectionViewCell>
     </objects>

@@ -57,6 +57,7 @@ extension NetworkTools {
         }
     }
 }
+
 // MARK:- 请求用户信息
 extension NetworkTools {
     func requestUserInfo(access_token : String , uid : String , finished : (result : [String : AnyObject]?,error : NSError?)->()){
@@ -71,3 +72,40 @@ extension NetworkTools {
         }
     }
 }
+
+// MARK:- 发送微博
+extension NetworkTools {
+    func sendStatus(statusText : String , isSuccess : (isSuccess : Bool)->()){
+        //获取发送请求你参数
+        let urlStr = "https://api.weibo.com/2/statuses/update.json"
+        let params = ["access_token" : UserAccountViewModel.shareInstan.account?.access_token ?? "",
+                      "status" : statusText]
+        NetworkTools.shareInstance.request(.POST, urlString: urlStr, parameters: params) { (result, error) in
+            if error != nil {
+                isSuccess(isSuccess: false)
+                return
+            }
+            isSuccess(isSuccess: true)
+        }
+    }
+}
+
+// MARK:- 发送微博且附带图片
+extension NetworkTools {
+    func sendStatus(statusText : String , image : UIImage , isSuccess : (isSuccess : Bool)->()) {
+        let urlStr = "https://upload.api.weibo.com/2/statuses/upload.json"
+        let params = ["access_token" : UserAccountViewModel.shareInstan.account?.access_token ?? "",
+            "status" : statusText]
+        
+        POST(urlStr, parameters: params, constructingBodyWithBlock: { (formData) in
+            if let imageData = UIImageJPEGRepresentation(image, 0.7) {
+                formData.appendPartWithFileData(imageData, name: "pic", fileName: "image_1.png", mimeType: "image/png")
+            }
+            }, progress: nil, success: { (dataTask : NSURLSessionDataTask, anyObject : AnyObject?) in
+                isSuccess(isSuccess: true)
+        }) { (dataTask : NSURLSessionDataTask?, error : NSError) in
+            isSuccess(isSuccess: false)
+        }
+    }
+}
+

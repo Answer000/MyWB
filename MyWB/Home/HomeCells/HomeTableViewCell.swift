@@ -56,8 +56,9 @@ class HomeTableViewCell: UITableViewCell {
             verifiedTypeImageView.image = viewModel.verifiedImage;
             //设置会员等级图标
             vipImageView.image = viewModel.vipImage
+            
             //设置微博正文
-            contentLabel.text = viewModel.status?.text
+            contentLabel.attributedText = FindEmotionHelper.shareInstance.findEmotion(viewModel.status?.text, font: contentLabel.font)
             //设置picView的宽高约束
             let picViewSize = calculatePicViewWH((viewModel.pic_urlArray?.count)!)
             picView_width_constraints.constant = picViewSize.width
@@ -69,7 +70,7 @@ class HomeTableViewCell: UITableViewCell {
             if let retweetedText = viewModel.status?.retweeted_status?.text ,
                let screenName = viewModel.status?.retweeted_status?.user?.screen_name {
                 //设置转发Label的内容
-                retweetedLabel.text = "@\(screenName)：" + retweetedText
+                retweetedLabel.attributedText = FindEmotionHelper.shareInstance.findEmotion("@\(screenName)：" + retweetedText, font: retweetedLabel.font)
                 //设置转发Label的顶部约束
                 retweetedLabel_top_constraints.constant = 15
             }else{
@@ -116,8 +117,12 @@ extension HomeTableViewCell {
             let urlString = viewModel?.pic_urlArray?.first?.absoluteString
             let image = SDWebImageManager.sharedManager().imageCache.imageFromDiskCacheForKey(urlString)
             if (image != nil) {
-                layout.itemSize = CGSize(width: image.size.width * 2, height: image.size.height * 2)
-                return CGSize(width: image.size.width * 2, height: image.size.height * 2)
+                if image.size.height/image.size.width > 3 {
+                    layout.itemSize = CGSize(width: (screenWidth - 2*edgeMargin - 2*itemMargin) / 3, height: (screenWidth - 2*edgeMargin - 2*itemMargin) / 2)
+                }else{
+                    layout.itemSize = CGSize(width: image.size.width, height: image.size.height)
+                }
+                return layout.itemSize
             }
             return CGSizeZero
         }

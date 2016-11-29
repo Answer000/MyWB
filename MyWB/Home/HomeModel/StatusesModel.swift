@@ -22,7 +22,7 @@ class StatusesModel: NSObject {
     // MARK:- 自定义构造函数
     init(dict : [String : AnyObject]) {
         super.init()
-        setValuesForKeysWithDictionary(dict);
+        setValuesForKeysWithDictionary(dict)
         
         //1.将用户字典转成用户模型对象
         if let userDict = dict["user"] as? [String : AnyObject] {

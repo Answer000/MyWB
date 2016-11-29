@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3414AB371DC085B40022EA17 /* PhotoBrowserAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3414AB361DC085B40022EA17 /* PhotoBrowserAnimator.swift */; };
 		3418B2E91D5C1C3A004BE2F7 /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3418B2E71D5C1C3A004BE2F7 /* OAuthViewController.swift */; };
 		3418B2EA1D5C1C3A004BE2F7 /* OAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3418B2E81D5C1C3A004BE2F7 /* OAuthViewController.xib */; };
 		3418B2EC1D5C2EA1004BE2F7 /* OAuth_Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3418B2EB1D5C2EA1004BE2F7 /* OAuth_Info.swift */; };
 		3418B2EE1D5C548B004BE2F7 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3418B2ED1D5C548B004BE2F7 /* UserAccount.swift */; };
 		342356701D59A91000CD4770 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3423566F1D59A91000CD4770 /* NetworkTools.swift */; };
+		3425FB011DBDA6B100528A4F /* EmojiTextView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425FB001DBDA6B100528A4F /* EmojiTextView-Extension.swift */; };
+		3425FB031DBDF2F900528A4F /* FindEmotionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3425FB021DBDF2F900528A4F /* FindEmotionHelper.swift */; };
 		34293EE71D5830440055EFD3 /* UIBarButtonItem+image_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34293EE61D5830440055EFD3 /* UIBarButtonItem+image_Extension.swift */; };
 		34293EEB1D584F730055EFD3 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34293EE91D584F730055EFD3 /* PopoverViewController.swift */; };
 		34293EEC1D584F730055EFD3 /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34293EEA1D584F730055EFD3 /* PopoverViewController.xib */; };
 		34293EF21D5855910055EFD3 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34293EF11D5855910055EFD3 /* TitleButton.swift */; };
 		34293EF41D586D210055EFD3 /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34293EF31D586D210055EFD3 /* CustomPresentationController.swift */; };
 		34293EF61D5888870055EFD3 /* PopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34293EF51D5888870055EFD3 /* PopoverAnimator.swift */; };
+		342ECB561DC2ECD900093A4A /* ProfileFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342ECB541DC2ECD900093A4A /* ProfileFirstCell.swift */; };
+		342ECB571DC2ECD900093A4A /* ProfileFirstCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342ECB551DC2ECD900093A4A /* ProfileFirstCell.xib */; };
+		342ECB591DC322A900093A4A /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342ECB581DC322A900093A4A /* SettingCell.swift */; };
+		342ECB5C1DC34EB700093A4A /* ProfileCountsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342ECB5B1DC34EB700093A4A /* ProfileCountsModel.swift */; };
+		3432288A1DBF423F007E16F2 /* PhotoBrowserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343228891DBF423F007E16F2 /* PhotoBrowserCell.swift */; };
 		344FD0CC1D54238D000F70E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FD0CB1D54238D000F70E1 /* AppDelegate.swift */; };
 		344FD0D31D54238D000F70E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344FD0D21D54238D000F70E1 /* Assets.xcassets */; };
 		344FD0D61D54238D000F70E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344FD0D41D54238D000F70E1 /* LaunchScreen.storyboard */; };
@@ -38,22 +46,32 @@
 		344FD12F1D5470F9000F70E1 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 344FD12E1D5470F9000F70E1 /* VisitorView.xib */; };
 		344FD1331D547762000F70E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344FD1311D547762000F70E1 /* Main.storyboard */; };
 		344FD1341D547762000F70E1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FD1321D547762000F70E1 /* MainViewController.swift */; };
+		345DF4F01DBF03DC00834AE4 /* PhotoBrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345DF4EE1DBF03DC00834AE4 /* PhotoBrowseViewController.swift */; };
 		3461CE581DAE275600A1DA9B /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3461CE561DAE275600A1DA9B /* ComposeViewController.swift */; };
 		3461CE591DAE275600A1DA9B /* ComposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3461CE571DAE275600A1DA9B /* ComposeViewController.xib */; };
 		3461CE5B1DAE297E00A1DA9B /* ComposeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3461CE5A1DAE297E00A1DA9B /* ComposeTitleView.swift */; };
 		3461CE5D1DAE375800A1DA9B /* ComposeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3461CE5C1DAE375800A1DA9B /* ComposeTextView.swift */; };
+		3489EDC01DC1B02B0070BD29 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3489EDBF1DC1B02B0070BD29 /* SettingViewController.swift */; };
 		349B85021DAA151900133B19 /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349B85011DAA151900133B19 /* NSDate-Extension.swift */; };
 		349B85041DAA278200133B19 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349B85031DAA278200133B19 /* UserModel.swift */; };
 		34C22D401D5DBB7A00335ED8 /* UserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C22D3F1D5DBB7A00335ED8 /* UserAccountViewModel.swift */; };
 		34C4D2951DAA48C300ABDE6A /* StatusesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C4D2941DAA48C300ABDE6A /* StatusesViewModel.swift */; };
 		34C4D2991DAA569600ABDE6A /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C4D2971DAA569600ABDE6A /* HomeTableViewCell.swift */; };
+		34D3B9AD1DB8DBE200BD1BBB /* EmojiTextAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D3B9AC1DB8DBE200BD1BBB /* EmojiTextAttachment.swift */; };
+		34D694D41DB62A39009385EF /* EmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D694D31DB62A39009385EF /* EmojiViewController.swift */; };
 		34DE9DE11DB0C68D002AC688 /* PickerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DE9DE01DB0C68D002AC688 /* PickerCollectionView.swift */; };
 		34DE9DE41DB0C6A7002AC688 /* PickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DE9DE21DB0C6A7002AC688 /* PickerCollectionViewCell.swift */; };
 		34DE9DE51DB0C6A7002AC688 /* PickerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34DE9DE31DB0C6A7002AC688 /* PickerCollectionViewCell.xib */; };
+		34E2EFD21DB746F200EC9EB1 /* Emoticons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 34E2EFD11DB746F200EC9EB1 /* Emoticons.bundle */; };
+		34E2EFD51DB7474D00EC9EB1 /* EmojiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E2EFD41DB7474D00EC9EB1 /* EmojiManager.swift */; };
+		34E2EFD71DB7476C00EC9EB1 /* EmojiPackge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E2EFD61DB7476C00EC9EB1 /* EmojiPackge.swift */; };
+		34E2EFD91DB7477900EC9EB1 /* Emojis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E2EFD81DB7477900EC9EB1 /* Emojis.swift */; };
+		34E2EFDB1DB7651600EC9EB1 /* EmojiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E2EFDA1DB7651600EC9EB1 /* EmojiCollectionViewCell.swift */; };
 		34E4341E1DAB7FC6006E4AE5 /* PicCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E4341D1DAB7FC6006E4AE5 /* PicCollectionView.swift */; };
 		34EC38911D76E24200A4D920 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EC388F1D76E24200A4D920 /* WelcomeViewController.swift */; };
 		34EC38921D76E24200A4D920 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34EC38901D76E24200A4D920 /* WelcomeViewController.xib */; };
 		34F9DE4A1DA8E58B0060ABFA /* StatusesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F9DE491DA8E58B0060ABFA /* StatusesModel.swift */; };
+		34FF9EDF1DBF73DA00740DF7 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FF9EDE1DBF73DA00740DF7 /* ProgressView.swift */; };
 		FF52DB23077D08E95CC411E2 /* Pods_MyWB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF4C1651B916FDECCAB995 /* Pods_MyWB.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,17 +93,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3414AB361DC085B40022EA17 /* PhotoBrowserAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserAnimator.swift; sourceTree = "<group>"; };
 		3418B2E71D5C1C3A004BE2F7 /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
 		3418B2E81D5C1C3A004BE2F7 /* OAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OAuthViewController.xib; sourceTree = "<group>"; };
 		3418B2EB1D5C2EA1004BE2F7 /* OAuth_Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth_Info.swift; sourceTree = "<group>"; };
 		3418B2ED1D5C548B004BE2F7 /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		3423566F1D59A91000CD4770 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		3425FB001DBDA6B100528A4F /* EmojiTextView-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EmojiTextView-Extension.swift"; sourceTree = "<group>"; };
+		3425FB021DBDF2F900528A4F /* FindEmotionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindEmotionHelper.swift; sourceTree = "<group>"; };
 		34293EE61D5830440055EFD3 /* UIBarButtonItem+image_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+image_Extension.swift"; sourceTree = "<group>"; };
 		34293EE91D584F730055EFD3 /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 		34293EEA1D584F730055EFD3 /* PopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
 		34293EF11D5855910055EFD3 /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
 		34293EF31D586D210055EFD3 /* CustomPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentationController.swift; sourceTree = "<group>"; };
 		34293EF51D5888870055EFD3 /* PopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverAnimator.swift; sourceTree = "<group>"; };
+		342ECB541DC2ECD900093A4A /* ProfileFirstCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileFirstCell.swift; sourceTree = "<group>"; };
+		342ECB551DC2ECD900093A4A /* ProfileFirstCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileFirstCell.xib; sourceTree = "<group>"; };
+		342ECB581DC322A900093A4A /* SettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		342ECB5B1DC34EB700093A4A /* ProfileCountsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCountsModel.swift; sourceTree = "<group>"; };
+		343228891DBF423F007E16F2 /* PhotoBrowserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserCell.swift; sourceTree = "<group>"; };
 		344FD0C81D54238D000F70E1 /* MyWB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		344FD0CB1D54238D000F70E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		344FD0D21D54238D000F70E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -112,22 +138,32 @@
 		344FD12E1D5470F9000F70E1 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
 		344FD1311D547762000F70E1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		344FD1321D547762000F70E1 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		345DF4EE1DBF03DC00834AE4 /* PhotoBrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowseViewController.swift; sourceTree = "<group>"; };
 		3461CE561DAE275600A1DA9B /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		3461CE571DAE275600A1DA9B /* ComposeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComposeViewController.xib; sourceTree = "<group>"; };
 		3461CE5A1DAE297E00A1DA9B /* ComposeTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeTitleView.swift; sourceTree = "<group>"; };
 		3461CE5C1DAE375800A1DA9B /* ComposeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeTextView.swift; sourceTree = "<group>"; };
+		3489EDBF1DC1B02B0070BD29 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		349B85011DAA151900133B19 /* NSDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
 		349B85031DAA278200133B19 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		34C22D3F1D5DBB7A00335ED8 /* UserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountViewModel.swift; sourceTree = "<group>"; };
 		34C4D2941DAA48C300ABDE6A /* StatusesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusesViewModel.swift; sourceTree = "<group>"; };
 		34C4D2971DAA569600ABDE6A /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		34D3B9AC1DB8DBE200BD1BBB /* EmojiTextAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiTextAttachment.swift; sourceTree = "<group>"; };
+		34D694D31DB62A39009385EF /* EmojiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiViewController.swift; sourceTree = "<group>"; };
 		34DE9DE01DB0C68D002AC688 /* PickerCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerCollectionView.swift; sourceTree = "<group>"; };
 		34DE9DE21DB0C6A7002AC688 /* PickerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerCollectionViewCell.swift; sourceTree = "<group>"; };
 		34DE9DE31DB0C6A7002AC688 /* PickerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerCollectionViewCell.xib; sourceTree = "<group>"; };
+		34E2EFD11DB746F200EC9EB1 /* Emoticons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emoticons.bundle; sourceTree = "<group>"; };
+		34E2EFD41DB7474D00EC9EB1 /* EmojiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiManager.swift; sourceTree = "<group>"; };
+		34E2EFD61DB7476C00EC9EB1 /* EmojiPackge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiPackge.swift; sourceTree = "<group>"; };
+		34E2EFD81DB7477900EC9EB1 /* Emojis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emojis.swift; sourceTree = "<group>"; };
+		34E2EFDA1DB7651600EC9EB1 /* EmojiCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiCollectionViewCell.swift; sourceTree = "<group>"; };
 		34E4341D1DAB7FC6006E4AE5 /* PicCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicCollectionView.swift; sourceTree = "<group>"; };
 		34EC388F1D76E24200A4D920 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		34EC38901D76E24200A4D920 /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 		34F9DE491DA8E58B0060ABFA /* StatusesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusesModel.swift; sourceTree = "<group>"; };
+		34FF9EDE1DBF73DA00740DF7 /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		3919D167FEC4571669537CF5 /* Pods-MyWB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWB.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWB/Pods-MyWB.release.xcconfig"; sourceTree = "<group>"; };
 		49BF4C1651B916FDECCAB995 /* Pods_MyWB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C15D57EAA7B34B313B14003 /* Pods-MyWB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyWB/Pods-MyWB.debug.xcconfig"; sourceTree = "<group>"; };
@@ -198,6 +234,23 @@
 			path = Class;
 			sourceTree = "<group>";
 		};
+		342ECB531DC2ECAB00093A4A /* ProfileCells */ = {
+			isa = PBXGroup;
+			children = (
+				342ECB541DC2ECD900093A4A /* ProfileFirstCell.swift */,
+				342ECB551DC2ECD900093A4A /* ProfileFirstCell.xib */,
+			);
+			path = ProfileCells;
+			sourceTree = "<group>";
+		};
+		342ECB5A1DC34E8900093A4A /* ProfileModels */ = {
+			isa = PBXGroup;
+			children = (
+				342ECB5B1DC34EB700093A4A /* ProfileCountsModel.swift */,
+			);
+			path = ProfileModels;
+			sourceTree = "<group>";
+		};
 		344FD0BF1D54238D000F70E1 = {
 			isa = PBXGroup;
 			children = (
@@ -223,11 +276,11 @@
 		344FD0CA1D54238D000F70E1 /* MyWB */ = {
 			isa = PBXGroup;
 			children = (
-				3461CE551DAE272F00A1DA9B /* Compose */,
-				344FD1051D542650000F70E1 /* Home */,
-				344FD10A1D542656000F70E1 /* Message */,
-				344FD10D1D54265C000F70E1 /* Discover */,
-				344FD1101D542662000F70E1 /* Profile */,
+				3461CE551DAE272F00A1DA9B /* Compose(发布) */,
+				344FD1051D542650000F70E1 /* Home(首页) */,
+				344FD10A1D542656000F70E1 /* Message(消息) */,
+				344FD10D1D54265C000F70E1 /* Discover(发现) */,
+				344FD1101D542662000F70E1 /* Profile(我) */,
 				344FD11D1D542C70000F70E1 /* Main */,
 				344FD1231D542FFA000F70E1 /* Tools */,
 				344FD1191D5426AD000F70E1 /* Others */,
@@ -253,42 +306,50 @@
 			path = MyWBUITests;
 			sourceTree = "<group>";
 		};
-		344FD1051D542650000F70E1 /* Home */ = {
+		344FD1051D542650000F70E1 /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
+				345DF4ED1DBF03B500834AE4 /* PhotoBrowse */,
 				34C4D2961DAA567C00ABDE6A /* HomeCells */,
 				34F9DE481DA8E4C80060ABFA /* HomeModel */,
 				34293EE81D584F190055EFD3 /* TitleView */,
 				344FD1061D542650000F70E1 /* Home.storyboard */,
 				344FD1071D542650000F70E1 /* HomeViewController.swift */,
 			);
+			name = "Home(首页)";
 			path = Home;
 			sourceTree = "<group>";
 		};
-		344FD10A1D542656000F70E1 /* Message */ = {
+		344FD10A1D542656000F70E1 /* Message(消息) */ = {
 			isa = PBXGroup;
 			children = (
 				344FD10B1D542656000F70E1 /* Message.storyboard */,
 				344FD1131D542674000F70E1 /* MessageViewController.swift */,
 			);
+			name = "Message(消息)";
 			path = Message;
 			sourceTree = "<group>";
 		};
-		344FD10D1D54265C000F70E1 /* Discover */ = {
+		344FD10D1D54265C000F70E1 /* Discover(发现) */ = {
 			isa = PBXGroup;
 			children = (
 				344FD10E1D54265C000F70E1 /* Discover.storyboard */,
 				344FD1151D542686000F70E1 /* DiscoverViewController.swift */,
 			);
+			name = "Discover(发现)";
 			path = Discover;
 			sourceTree = "<group>";
 		};
-		344FD1101D542662000F70E1 /* Profile */ = {
+		344FD1101D542662000F70E1 /* Profile(我) */ = {
 			isa = PBXGroup;
 			children = (
+				342ECB5A1DC34E8900093A4A /* ProfileModels */,
+				342ECB531DC2ECAB00093A4A /* ProfileCells */,
+				3489EDBE1DC1AFE70070BD29 /* Setting(设置) */,
 				344FD1111D542662000F70E1 /* Profile.storyboard */,
 				344FD1171D542692000F70E1 /* ProfileViewController.swift */,
 			);
+			name = "Profile(我)";
 			path = Profile;
 			sourceTree = "<group>";
 		};
@@ -331,6 +392,7 @@
 				344FD1271D54417B000F70E1 /* UIButton+image_Extension.swift */,
 				34293EE61D5830440055EFD3 /* UIBarButtonItem+image_Extension.swift */,
 				349B85011DAA151900133B19 /* NSDate-Extension.swift */,
+				3425FB001DBDA6B100528A4F /* EmojiTextView-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -354,16 +416,38 @@
 			path = Resoure;
 			sourceTree = "<group>";
 		};
-		3461CE551DAE272F00A1DA9B /* Compose */ = {
+		345DF4ED1DBF03B500834AE4 /* PhotoBrowse */ = {
 			isa = PBXGroup;
 			children = (
+				345DF4EE1DBF03DC00834AE4 /* PhotoBrowseViewController.swift */,
+				343228891DBF423F007E16F2 /* PhotoBrowserCell.swift */,
+				34FF9EDE1DBF73DA00740DF7 /* ProgressView.swift */,
+				3414AB361DC085B40022EA17 /* PhotoBrowserAnimator.swift */,
+			);
+			path = PhotoBrowse;
+			sourceTree = "<group>";
+		};
+		3461CE551DAE272F00A1DA9B /* Compose(发布) */ = {
+			isa = PBXGroup;
+			children = (
+				34D694D21DB62A22009385EF /* EmojiViewController */,
 				34DE9DDF1DB0C63A002AC688 /* PickerCollectionView */,
 				3461CE561DAE275600A1DA9B /* ComposeViewController.swift */,
 				3461CE571DAE275600A1DA9B /* ComposeViewController.xib */,
 				3461CE5A1DAE297E00A1DA9B /* ComposeTitleView.swift */,
 				3461CE5C1DAE375800A1DA9B /* ComposeTextView.swift */,
 			);
+			name = "Compose(发布)";
 			path = Compose;
+			sourceTree = "<group>";
+		};
+		3489EDBE1DC1AFE70070BD29 /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				3489EDBF1DC1B02B0070BD29 /* SettingViewController.swift */,
+				342ECB581DC322A900093A4A /* SettingCell.swift */,
+			);
+			path = "Setting(设置)";
 			sourceTree = "<group>";
 		};
 		34C4D2961DAA567C00ABDE6A /* HomeCells */ = {
@@ -375,6 +459,19 @@
 			path = HomeCells;
 			sourceTree = "<group>";
 		};
+		34D694D21DB62A22009385EF /* EmojiViewController */ = {
+			isa = PBXGroup;
+			children = (
+				34E2EFD31DB7473200EC9EB1 /* Models */,
+				34E2EFD11DB746F200EC9EB1 /* Emoticons.bundle */,
+				34D694D31DB62A39009385EF /* EmojiViewController.swift */,
+				34E2EFDA1DB7651600EC9EB1 /* EmojiCollectionViewCell.swift */,
+				34D3B9AC1DB8DBE200BD1BBB /* EmojiTextAttachment.swift */,
+				3425FB021DBDF2F900528A4F /* FindEmotionHelper.swift */,
+			);
+			path = EmojiViewController;
+			sourceTree = "<group>";
+		};
 		34DE9DDF1DB0C63A002AC688 /* PickerCollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -383,6 +480,16 @@
 				34DE9DE31DB0C6A7002AC688 /* PickerCollectionViewCell.xib */,
 			);
 			path = PickerCollectionView;
+			sourceTree = "<group>";
+		};
+		34E2EFD31DB7473200EC9EB1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				34E2EFD41DB7474D00EC9EB1 /* EmojiManager.swift */,
+				34E2EFD61DB7476C00EC9EB1 /* EmojiPackge.swift */,
+				34E2EFD81DB7477900EC9EB1 /* Emojis.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		34EC388E1D76E24200A4D920 /* Welcome */ = {
@@ -537,6 +644,7 @@
 				344FD0D61D54238D000F70E1 /* LaunchScreen.storyboard in Resources */,
 				34DE9DE51DB0C6A7002AC688 /* PickerCollectionViewCell.xib in Resources */,
 				344FD11C1D542976000F70E1 /* Null.storyboard in Resources */,
+				34E2EFD21DB746F200EC9EB1 /* Emoticons.bundle in Resources */,
 				344FD0D31D54238D000F70E1 /* Assets.xcassets in Resources */,
 				34EC38921D76E24200A4D920 /* WelcomeViewController.xib in Resources */,
 				34293EEC1D584F730055EFD3 /* PopoverViewController.xib in Resources */,
@@ -546,6 +654,7 @@
 				344FD1121D542662000F70E1 /* Profile.storyboard in Resources */,
 				344FD1331D547762000F70E1 /* Main.storyboard in Resources */,
 				344FD10F1D54265C000F70E1 /* Discover.storyboard in Resources */,
+				342ECB571DC2ECD900093A4A /* ProfileFirstCell.xib in Resources */,
 				344FD12F1D5470F9000F70E1 /* VisitorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -621,17 +730,31 @@
 			files = (
 				344FD0CC1D54238D000F70E1 /* AppDelegate.swift in Sources */,
 				349B85021DAA151900133B19 /* NSDate-Extension.swift in Sources */,
+				34D3B9AD1DB8DBE200BD1BBB /* EmojiTextAttachment.swift in Sources */,
 				344FD1161D542686000F70E1 /* DiscoverViewController.swift in Sources */,
 				34F9DE4A1DA8E58B0060ABFA /* StatusesModel.swift in Sources */,
 				3461CE5B1DAE297E00A1DA9B /* ComposeTitleView.swift in Sources */,
 				3418B2EE1D5C548B004BE2F7 /* UserAccount.swift in Sources */,
 				342356701D59A91000CD4770 /* NetworkTools.swift in Sources */,
+				34E2EFDB1DB7651600EC9EB1 /* EmojiCollectionViewCell.swift in Sources */,
+				3432288A1DBF423F007E16F2 /* PhotoBrowserCell.swift in Sources */,
+				34E2EFD91DB7477900EC9EB1 /* Emojis.swift in Sources */,
+				3414AB371DC085B40022EA17 /* PhotoBrowserAnimator.swift in Sources */,
+				34FF9EDF1DBF73DA00740DF7 /* ProgressView.swift in Sources */,
+				3425FB011DBDA6B100528A4F /* EmojiTextView-Extension.swift in Sources */,
+				34E2EFD71DB7476C00EC9EB1 /* EmojiPackge.swift in Sources */,
+				34E2EFD51DB7474D00EC9EB1 /* EmojiManager.swift in Sources */,
+				345DF4F01DBF03DC00834AE4 /* PhotoBrowseViewController.swift in Sources */,
+				34D694D41DB62A39009385EF /* EmojiViewController.swift in Sources */,
 				34293EE71D5830440055EFD3 /* UIBarButtonItem+image_Extension.swift in Sources */,
 				34EC38911D76E24200A4D920 /* WelcomeViewController.swift in Sources */,
 				349B85041DAA278200133B19 /* UserModel.swift in Sources */,
 				3461CE581DAE275600A1DA9B /* ComposeViewController.swift in Sources */,
 				3418B2EC1D5C2EA1004BE2F7 /* OAuth_Info.swift in Sources */,
+				3489EDC01DC1B02B0070BD29 /* SettingViewController.swift in Sources */,
 				34C4D2951DAA48C300ABDE6A /* StatusesViewModel.swift in Sources */,
+				342ECB5C1DC34EB700093A4A /* ProfileCountsModel.swift in Sources */,
+				3425FB031DBDF2F900528A4F /* FindEmotionHelper.swift in Sources */,
 				34DE9DE41DB0C6A7002AC688 /* PickerCollectionViewCell.swift in Sources */,
 				34C4D2991DAA569600ABDE6A /* HomeTableViewCell.swift in Sources */,
 				3418B2E91D5C1C3A004BE2F7 /* OAuthViewController.swift in Sources */,
@@ -642,9 +765,11 @@
 				344FD1181D542692000F70E1 /* ProfileViewController.swift in Sources */,
 				344FD12B1D546D22000F70E1 /* BaseViewController.swift in Sources */,
 				34293EEB1D584F730055EFD3 /* PopoverViewController.swift in Sources */,
+				342ECB591DC322A900093A4A /* SettingCell.swift in Sources */,
 				34293EF61D5888870055EFD3 /* PopoverAnimator.swift in Sources */,
 				34E4341E1DAB7FC6006E4AE5 /* PicCollectionView.swift in Sources */,
 				34C22D401D5DBB7A00335ED8 /* UserAccountViewModel.swift in Sources */,
+				342ECB561DC2ECD900093A4A /* ProfileFirstCell.swift in Sources */,
 				344FD12D1D5470DC000F70E1 /* VisitorView.swift in Sources */,
 				344FD1341D547762000F70E1 /* MainViewController.swift in Sources */,
 				344FD1141D542674000F70E1 /* MessageViewController.swift in Sources */,

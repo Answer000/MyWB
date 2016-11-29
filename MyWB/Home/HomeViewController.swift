@@ -9,6 +9,7 @@
 import UIKit
 import SDWebImage
 import MJRefresh
+import SVProgressHUD
 
 //https://api.weibo.com/2/statuses/home_timeline.json?access_token=2.0069Ds3DR2cBwDebc36ab0744diShD
 
@@ -20,6 +21,7 @@ class HomeViewController: BaseViewController {
     private var isPresented = false
     private lazy var titleButton = TitleButton(frame: CGRectZero)
     private lazy var popoverAnimator = PopoverAnimator()
+    private lazy var photoBrowserAnimator = PhotoBrowserAnimator()
     private lazy var statusViewModels : [StatusesViewModel] = [StatusesViewModel]()
     private var tipLabel = UILabel() //提示Label
     
@@ -31,6 +33,7 @@ class HomeViewController: BaseViewController {
         // MARK:- 数据请求
         requestHomeData(true)
         
+        setupNotifiction()
         setupTipLabel()
         setupRefreshHeaderView()
         setupRefreshFooterView()
@@ -49,11 +52,14 @@ class HomeViewController: BaseViewController {
     }
     
     private func showTipLabel(newDataCount : Int) {
-        
+        if newDataCount == 0 {
+            return
+        }
         tipLabel.text = newDataCount > 0 ? "新增\(newDataCount)条数据" : "暂无数据更新"
         UIView.animateWithDuration(1.0, animations: {
             self.tipLabel.hidden = false
             self.tipLabel.frame.origin.y = 64
+            print(self.tipLabel.frame)
             }, completion: { (_) in
                 UIView.animateWithDuration(1.0, delay: 1.5, options: [], animations: { 
                     self.tipLabel.frame.origin.y = 30
@@ -79,8 +85,10 @@ extension HomeViewController {
         let parameters = ["access_token" : UserAccountViewModel.shareInstan.account?.access_token ?? "",
                           "since_id" : "\(since_id)",
                           "max_id" : "\(max_id)"]
+        SVProgressHUD.show()
         NetworkTools.shareInstance.request(.GET, urlString: url, parameters: parameters) { (result, error) -> () in
             if(error != nil){
+                SVProgressHUD.dismiss()
                 print(error)
                 return
             }
@@ -126,6 +134,7 @@ extension HomeViewController {
         
         //线程组通知
         dispatch_group_notify(group, dispatch_get_main_queue()) {
+            SVProgressHUD.dismiss()
             //关闭刷新头
             self.tableView.mj_header.endRefreshing()
             //关闭刷新尾
@@ -155,11 +164,6 @@ extension HomeViewController{
         cell.viewModel = statusViewModel
         return cell
     }
-    
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-    }
-    
 }
 
 // MARK:-  设置UI（未登录状态）
@@ -225,4 +229,28 @@ extension HomeViewController {
         presentViewController(titleVC, animated: true, completion: nil)
     }
 }
+
+// MARK:- 通知中心
+extension HomeViewController {
+    private func setupNotifiction() {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(HomeViewController.showPhotoBrowserAction(_:)), name: showPhotoBrowserNote, object: nil)
+    }
+    @objc private func showPhotoBrowserAction(info : NSNotification) {
+        guard let note = info.userInfo ,object = info.object else {
+            return
+        }
+        let pic_urls = note["pic_urls"] as! [NSURL]
+        let indexPath = note["indexPath"] as! NSIndexPath
+        let photoBrowserVc = PhotoBrowseViewController(photo_urls: pic_urls, indexPath: indexPath)
+        photoBrowserVc.modalPresentationStyle = .Custom
+        photoBrowserVc.transitioningDelegate = photoBrowserAnimator
+        photoBrowserAnimator.indexPath = indexPath
+        photoBrowserAnimator.pic_urls = pic_urls
+        photoBrowserAnimator.presentDelegate = object as! PicCollectionView
+        photoBrowserAnimator.dismissDelegate = photoBrowserVc
+        presentViewController(photoBrowserVc, animated: true, completion: nil)
+    }
+}
+
+
 

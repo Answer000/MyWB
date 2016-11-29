@@ -8,6 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ComposeViewController" customModule="MyWB" customModuleProvider="target">
             <connections>
+                <outlet property="pickerCollectionView" destination="Lrj-XF-WqE" id="ajy-92-1hr"/>
                 <outlet property="pickerCollectionView_height_cons" destination="lc7-sZ-1ng" id="5AW-Fp-36f"/>
                 <outlet property="textView" destination="LPP-s5-jM6" id="PXn-vU-pUk"/>
                 <outlet property="toolBar_bottom_cons" destination="wE4-b0-9Wm" id="8zJ-TS-bzY"/>
@@ -81,6 +82,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="compose_emoticonbutton_background"/>
                                 <state key="highlighted" image="compose_emoticonbutton_background_highlighted"/>
+                                <connections>
+                                    <action selector="emojiButtonClick:" destination="-1" eventType="touchUpInside" id="H5f-Zb-a3c"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="APu-Zp-na7"/>
@@ -101,10 +105,10 @@
                 <constraint firstAttribute="trailing" secondItem="Lrj-XF-WqE" secondAttribute="trailing" id="3WT-KZ-oKg"/>
                 <constraint firstItem="Lrj-XF-WqE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6EU-u4-Tdg"/>
                 <constraint firstItem="LPP-s5-jM6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CH9-EP-e0z"/>
-                <constraint firstItem="fl5-1d-Hhq" firstAttribute="bottom" secondItem="Lrj-XF-WqE" secondAttribute="bottom" id="EPN-I2-aXU"/>
                 <constraint firstItem="LPP-s5-jM6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Hu5-tr-Lv7"/>
                 <constraint firstAttribute="bottom" secondItem="LPP-s5-jM6" secondAttribute="bottom" id="aZ9-5a-byA"/>
                 <constraint firstAttribute="trailing" secondItem="LPP-s5-jM6" secondAttribute="trailing" id="acU-Yh-Jst"/>
+                <constraint firstAttribute="bottom" secondItem="Lrj-XF-WqE" secondAttribute="bottom" id="ioI-94-kQd"/>
                 <constraint firstAttribute="trailing" secondItem="fl5-1d-Hhq" secondAttribute="trailing" id="kJs-Po-wGW"/>
                 <constraint firstItem="fl5-1d-Hhq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="o5c-fH-7n9"/>
                 <constraint firstAttribute="bottom" secondItem="fl5-1d-Hhq" secondAttribute="bottom" id="wE4-b0-9Wm"/>
